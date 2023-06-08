@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap");
 :root {
   --primary-color: #33415c;
-  --secondary-color: #3aafc3;
+  --secondary-color: #2f80ed;
   --secondary2-color: #ec6432;
   --success-color: #27ae60;
   --danger-color: #eb5757;
@@ -302,18 +302,21 @@ button:focus {
 }
 
 .card {
-  background-color: red;
   padding: 22px 6px 12px 20px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   background: #ffffff;
   border-radius: 8px;
+  border: none;
 }
 .card .card-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4235294118);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2823529412);
   padding-bottom: 14px;
   margin-bottom: 15px;
+  background-color: transparent;
+  padding-top: 0;
+  padding-left: 0;
 }
 .card .card-header .head-title {
   color: #333333;
@@ -346,8 +349,8 @@ button:focus {
   margin-bottom: 15px;
 }
 .card-row .item svg {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   fill: #2f80ed;
   color: #2f80ed;
 }
@@ -379,16 +382,143 @@ button:focus {
   font-size: 12px;
   color: #4f4f4f;
 }
+.card-row.speaker {
+  gap: 20px;
+}
+.card-row.speaker .speaker-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+.card-row .item-col h5 {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px !important;
+  margin-bottom: 0 !important;
+}
+.card-row p {
+  padding-bottom: 0 !important;
+}
 
 .card-btn {
   border: 1px solid rgba(47, 128, 237, 0.2);
   border-radius: 4px;
   padding: 7px 30px;
-  background-color: var(--body-color);
+  background-color: white;
   width: 100%;
   transition: all 0.3s ease-in;
+  color: #4f4f4f;
+  text-align: center;
+  font-weight: 600;
+  font-size: 10px;
 }
 .card-btn:hover {
   background-color: #2f80ed;
   color: var(--body-color);
+}
+.card-btn:active {
+  background-color: rgb(44, 94, 233);
+}
+
+.modal-area {
+  background-color: white;
+  border-radius: 16px;
+}
+.modal-area .modal-header {
+  padding: 20px 20px 0 20px;
+  justify-content: start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.modal-area .modal-header h5 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 11px;
+  color: #333333;
+}
+.modal-area .modal-header .header-content-row {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 991.98px) {
+  .modal-area .modal-header .header-content-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.modal-area .modal-header .header-content-row .content-row-left {
+  display: flex;
+  gap: 15px;
+}
+.modal-area .modal-header .close-btn {
+  width: 24px;
+  height: 24px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.modal-area .modal-header .close-btn:hover {
+  background-color: #dbdbdb;
+}
+.modal-area .modal-header .close-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-content-body {
+  padding: 26px 20px;
+}
+.modal-content-body h5 {
+  margin-bottom: 11px;
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+.modal-content-body p {
+  padding-bottom: 30px;
+  color: #7c7c7c;
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .custom-model .modal-dialog {
+    width: 650px;
+  }
+}
+.custom-model .modal-body {
+  padding: 0;
+}
+.custom-model.modal-with-img .modal-header {
+  height: 271px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3411764706);
+}
+@media (max-width: 575.98px) {
+  .custom-model.modal-with-img .modal-header {
+    height: 160px;
+  }
+}
+.custom-model.modal-with-img .modal-header .header-content {
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+}
+.custom-model.modal-with-img .modal-header .header-content .item,
+.custom-model.modal-with-img .modal-header .header-content .item svg,
+.custom-model.modal-with-img .modal-header .header-content h5 {
+  color: white !important;
 }
