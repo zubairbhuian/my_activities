@@ -299,11 +299,12 @@ button:focus {
 @media (max-width: 991.98px) {
   .cards-section .cards {
     grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
   }
 }
 
 .card {
-  padding: 22px 6px 12px 20px;
+  padding: 22px 20px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
