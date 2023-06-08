@@ -262,7 +262,7 @@ button:focus {
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #000000;
   text-align: center;
 }
@@ -278,12 +278,13 @@ button:focus {
 }
 
 .cards-section .title {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   color: #000000;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 @media (max-width: 575.98px) {
   .cards-section .title {
