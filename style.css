@@ -414,6 +414,7 @@ button:focus {
   text-align: center;
   font-weight: 600;
   font-size: 10px;
+  cursor: pointer;
 }
 .card-btn:hover {
   background-color: #2f80ed;
@@ -468,6 +469,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .modal-area .modal-header .close-btn:hover {
   background-color: #dbdbdb;
