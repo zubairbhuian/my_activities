@@ -336,7 +336,7 @@ button:focus {
   border-top-right-radius: 4px;
 }
 .card.with-image .card-area {
-  padding: 22px 6px 12px 20px;
+  padding: 22px 20px;
 }
 
 .card-row {
